@@ -4,9 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.function.*;
+import com.network.memory.Memory;
 import com.network.node.Node;
 import com.network.weights.Weights;
-import com.readerwriter.Memory;
 import com.throwables.BadLoadException;
 
 public class BPNeuralNetwork {

@@ -1,10 +1,10 @@
-package com.readerwriter;
+package com.network.memory;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import com.readerwriter.ReadWriteTextFile;
+import com.network.memory.ReadWriteTextFile;
 import com.throwables.BadLoadException;
 
 public class Memory {

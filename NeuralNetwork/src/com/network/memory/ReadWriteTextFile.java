@@ -1,4 +1,4 @@
-package com.readerwriter;
+package com.network.memory;
 
 import java.io.*;
 import java.util.Scanner;
