@@ -34,7 +34,7 @@ public final class ReadWriteTextFile {
         return successful;
     }
 
-    static String read(String fileName) throws IOException {
+    static String read(String fileName) throws IOException, FileNotFoundException {
         log("Reading from file " + fileName + ".");
 
         StringBuilder outputText = new StringBuilder();

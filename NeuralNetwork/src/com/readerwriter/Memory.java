@@ -1,5 +1,6 @@
 package com.readerwriter;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -9,11 +10,6 @@ import com.throwables.BadLoadException;
 public class Memory {
 
     private Memory() {
-    }
-
-    public final static boolean save(int[] layerCounts, double[] weights)
-            throws IOException {
-        return save("Output.txt", layerCounts, weights);
     }
 
     public final static boolean save(String fileName, int[] layerCounts,
@@ -43,9 +39,10 @@ public class Memory {
     }
 
     public final static double[] load(String fileName, int[] layerCounts)
-            throws IOException, BadLoadException {
+            throws IOException, BadLoadException, FileNotFoundException {
         int numLayers = 0;
         int numWeights = 0;
+        
         double[] weights = null;
 
         String storedText = ReadWriteTextFile.read(fileName);

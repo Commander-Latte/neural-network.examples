@@ -12,7 +12,7 @@ public class Weights {
     // Number of weights per node.
     private final int secondLayerSize;
     // Double array representation of the weights for each node.
-    private final double[][] weights;
+    private double[][] weights;
 
     public Weights(int firstLayerSize, int secondLayerSize) {
         this.firstLayerSize = firstLayerSize;
@@ -149,5 +149,9 @@ public class Weights {
             }
         }
         return copy;
+    }
+    
+    public final void setWeights(double[][] weights) {
+        this.weights = weights;
     }
 }
